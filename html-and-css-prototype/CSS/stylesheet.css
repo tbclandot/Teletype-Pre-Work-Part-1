@@ -42,3 +42,162 @@ h1 {
 /* Your CSS code goes here */
 
 /* test */
+
+*,* * {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	position: relative;
+	box-sizing: border-box;
+}
+
+body {
+	font-size:62.5%;
+	font-family: Lato, sans-serif;
+}
+
+/* General Styles */
+h6 {
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+
+p {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #777;
+
+	span {
+		color: #EF5F3C;
+		font-weight: 600;
+	}
+}
+
+a {
+	color: #20A1D4;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.container {
+	display: block;
+	max-width: 265px;
+	width: 100%;
+	margin: 0 0 30px 20px;
+}
+
+.row {
+	display: block;
+	width: 100%;
+}
+
+}
+
+/* Button Styles */
+button {
+	padding: 12px;
+	background-color: #fafafa;
+	color: #777;
+	font-weight: 500;
+	font-size: 11px;
+	border: 2px solid #dcdcdc;
+	border-radius: 3px;
+	cursor: pointer;
+
+	&:first-child {
+		margin-right: 16px;
+	}
+}
+
+.middle-row button {
+	padding: 15px 12px;
+	margin-right: 0;
+	background-color: #1CBC2C;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+}
+
+.bottom-row button {
+	padding: 14px;
+	font-weight: 600;
+	width: 50%;
+}
+
+/* Content Styles */
+.top-row {
+	padding: 15px;
+	background-color: #424242;
+	border-radius: 3px;
+
+	span {
+		position: absolute;
+		bottom: -5px;
+		right: 35px;
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #424242;
+	}
+}
+
+.middle-row {
+	margin: 10px 0;
+	border: 2px solid #eaeaea;
+
+	.content-row {
+		border-top:2px solid #eaeaea;
+		padding: 20px;
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+
+	.input-row {
+		margin-bottom: 10px;
+		display: flex;
+
+		span {
+			width: 50%;
+			margin-right: 20px;
+
+			&:after {
+				position: absolute;
+				left: 6px;
+				top: 12px;
+				font-size: 15px;
+				font-weight: 600;
+				color: #828282;
+				content: '$';
+			}
+		}
+
+		input {
+			width: 100%;
+			display: flex;
+			padding: 10px 16px;
+			border: 2px solid #eaeaea;
+			border-radius: 3px;
+			font-size: 14px;
+			font-weight: 600;
+			color: #424242;
+
+			&:before {
+				content: '$';
+			}
+		}
+	}
+}
+.bottom-row {
+	display: flex;
+}
